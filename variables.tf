@@ -23,5 +23,5 @@ variable "zone_resource_group" {
 variable "records" {
   type = "list"
   description = "List of IPv4 Addresses"
-  default = []]
+  default = []
 }
