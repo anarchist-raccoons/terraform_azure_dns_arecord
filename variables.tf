@@ -11,14 +11,17 @@ variable "client_secret" {
 variable "tenant_id" {
     description = "Azure tenant ID."
 }
-variable "location" {
-  description = "Location of the azure resource group. Default is London."
-  default = "northeurope"
-}
+
 variable "zone_name" {
   description = "Zone Name"
 }
 
 variable "zone_resource_group" {
   description = "Zone Resource Group"
+}
+
+variable "records" {
+  type = "list"
+  description = "List of IPv4 Addresses"
+  default = []]
 }
