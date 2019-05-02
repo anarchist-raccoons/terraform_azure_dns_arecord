@@ -26,7 +26,7 @@ module "labels" {
 
 # Azure DNS A Record
 resource "azurerm_dns_a_record" "default" {
-  name = "${module.labels.id}"
+  name = "${module.labels.name}-${module.labels.environment}"
   zone_name           = "${var.zone_name}"
   resource_group_name = "${var.zone_resource_group}"
   ttl                 = 300
