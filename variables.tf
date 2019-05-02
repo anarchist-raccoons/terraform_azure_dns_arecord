@@ -20,8 +20,7 @@ variable "zone_resource_group" {
   description = "Zone Resource Group"
 }
 
-variable "records" {
-  type = "list"
+variable "record" {
   description = "List of IPv4 Addresses"
-  default = []
+  default = ""
 }
